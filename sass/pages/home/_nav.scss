@@ -1,3 +1,21 @@
-body{
-    background-color: black;
+@use "../../utilities/mixins" as *;
+@use "../../utilities/variables" as *;
+.item{
+    @include flex(space-between, center);
+    background-color: $primary-color;
+}
+.btn{
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-right: 5%;
+    background-color: $black;
+    color: white;
+}
+.in{
+    padding: 20px;
+    padding-left: 900px;
+}
+.ration{
+    font-size: 20px;
+    margin-left:10px;
 }
